@@ -42,7 +42,7 @@ class mqConsumer(mqConsumerInterface):
         channel.basic_ack(method_frame.delivery_tag, False)
 
         #Print message (The message is contained in the body parameter variable)
-        message = json.loads(body)
+        message = body
         print(message)
 
 
